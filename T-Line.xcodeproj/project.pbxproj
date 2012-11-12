@@ -23,6 +23,7 @@
 		148B157D164ED5FD00755717 /* TimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B157C164ED5FC00755717 /* TimeLineView.m */; };
 		148B1654164F4ADF00755717 /* TimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B1653164F4ADF00755717 /* TimeLineViewController.m */; };
 		148B16D61650919700755717 /* AddPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B16D51650919700755717 /* AddPageView.m */; };
+		148B16DC16515A8E00755717 /* Plus_sign.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 148B16DB16515A8E00755717 /* Plus_sign.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		148B1653164F4ADF00755717 /* TimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeLineViewController.m; path = ../TimeLineViewController.m; sourceTree = "<group>"; };
 		148B16D41650919700755717 /* AddPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPageView.h; sourceTree = "<group>"; };
 		148B16D51650919700755717 /* AddPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPageView.m; sourceTree = "<group>"; };
+		148B16DB16515A8E00755717 /* Plus_sign.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Plus_sign.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		148B1550164E9CC300755717 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				148B16DB16515A8E00755717 /* Plus_sign.jpg */,
 				148B1551164E9CC300755717 /* T-Line-Info.plist */,
 				148B1552164E9CC300755717 /* InfoPlist.strings */,
 				148B1555164E9CC300755717 /* main.m */,
@@ -188,6 +191,7 @@
 				148B155E164E9CC300755717 /* Default@2x.png in Resources */,
 				148B1560164E9CC300755717 /* Default-568h@2x.png in Resources */,
 				148B1563164E9CC300755717 /* MainStoryboard.storyboard in Resources */,
+				148B16DC16515A8E00755717 /* Plus_sign.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
