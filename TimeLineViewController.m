@@ -21,21 +21,16 @@
 @synthesize statusLabel;
 
 
--(IBAction)controlPan:(UIPanGestureRecognizer *)recognizer{
-  CGPoint translation = [recognizer translationInView:self.view];
-  recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
-  [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
-}
+//-(IBAction)controlPan:(UIPanGestureRecognizer *)recognizer{
+//  CGPoint translation = [recognizer translationInView:self.view];
+//  recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
+//  [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+//}
 
 -(IBAction)addPageImage:(UITapGestureRecognizer *)recognizer:(UITapGestureRecognizer *)recognizer{
-
-  
   [timeline addPage];
-  
   NSLog(@"num of pages is %d", [[timeline pages] count]);
-  
   [(TimeLineView *)_tlView setNumLines:[[timeline pages] count]];
-  
   [_tlView setNeedsDisplay];
 }
 
@@ -130,7 +125,7 @@
   return self;
 }
 
--(IBAction)click:(UIButton *)sender{
+/*-(IBAction)click:(UIButton *)sender{
   
   [timeline addPage];
   
@@ -163,6 +158,7 @@
   //[[[timeline pages] objectAtIndex:0] setNeedsDisplay];
   
 }
+ */
 /*
 - (IBAction)longPressDetected:(UIGestureRecognizer *)sender {
   statusLabel.text = @"Long Press";

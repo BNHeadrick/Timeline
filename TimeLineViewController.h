@@ -25,10 +25,10 @@
 
 -(id)init;
 
--(IBAction)click:(UIButton *)sender;
+//-(IBAction)click:(UIButton *)sender;
 //-(IBAction)tap:(UIView *)sender;
 
--(IBAction)controlPan:(UIPanGestureRecognizer *)recognizer;
+//-(IBAction)controlPan:(UIPanGestureRecognizer *)recognizer;
 -(IBAction)addPageImage:(UIPanGestureRecognizer *)recognizer;
 
 @end

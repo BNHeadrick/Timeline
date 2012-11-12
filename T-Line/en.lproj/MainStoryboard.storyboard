@@ -8,48 +8,15 @@
         <scene sceneID="Az0-Fa-7bH">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wT5-ru-lrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="dvw-9a-Uod">
-                    <connections>
-                        <action selector="controlPan:" destination="y1g-4t-QST" id="xB5-Qn-hqc"/>
-                    </connections>
-                </panGestureRecognizer>
                 <viewController id="y1g-4t-QST" customClass="TimeLineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RXW-7E-Mgv">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEq-y5-xyS">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="addPage">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="click:" destination="y1g-4t-QST" eventType="touchUpInside" id="Obx-fg-Iv9"/>
-                                </connections>
-                            </button>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADd-dz-QCK" customClass="TimeLineView">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdS-wy-BoI">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView contentMode="scaleToFill" image="Plus_sign.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Hi-q4-uPK" customClass="AddPage">
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="99" id="1hu-1s-ndV"/>
-                                    <constraint firstAttribute="width" constant="108" id="Zcx-ge-MKh"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="dvw-9a-Uod" appends="YES" id="fz6-b3-L5j"/>
-                                </connections>
-                            </imageView>
                             <imageView tag="3" contentMode="scaleToFill" image="Plus_sign.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="shu-1m-u36" customClass="AddPageImage">
                                 <gestureRecognizers/>
                                 <constraints>
@@ -63,23 +30,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="2Hi-q4-uPK" secondAttribute="bottom" constant="197" id="2IG-C8-JPP"/>
                             <constraint firstItem="shu-1m-u36" firstAttribute="trailing" secondItem="RXW-7E-Mgv" secondAttribute="trailing" type="default" id="3BJ-oS-8yF"/>
-                            <constraint firstAttribute="bottom" secondItem="jdS-wy-BoI" secondAttribute="bottom" constant="314" id="8U0-AP-cX6"/>
                             <constraint firstItem="ADd-dz-QCK" firstAttribute="bottom" secondItem="RXW-7E-Mgv" secondAttribute="bottom" type="default" id="BmB-zr-UdU"/>
-                            <constraint firstAttribute="bottom" secondItem="aEq-y5-xyS" secondAttribute="bottom" constant="189" id="LW4-Hq-a2v"/>
                             <constraint firstItem="shu-1m-u36" firstAttribute="bottom" secondItem="RXW-7E-Mgv" secondAttribute="bottom" type="default" id="MDk-Ih-CUA"/>
                             <constraint firstItem="ADd-dz-QCK" firstAttribute="top" secondItem="shu-1m-u36" secondAttribute="top" type="default" id="PYU-Gb-aUf"/>
-                            <constraint firstItem="jdS-wy-BoI" firstAttribute="centerX" secondItem="aEq-y5-xyS" secondAttribute="centerX" type="default" id="Zp2-bB-VrO"/>
-                            <constraint firstItem="2Hi-q4-uPK" firstAttribute="leading" secondItem="RXW-7E-Mgv" secondAttribute="leading" constant="112" id="cXe-cO-JaW"/>
                             <constraint firstAttribute="trailing" secondItem="ADd-dz-QCK" secondAttribute="trailing" constant="108" id="iCn-or-cRz"/>
-                            <constraint firstItem="jdS-wy-BoI" firstAttribute="centerX" secondItem="RXW-7E-Mgv" secondAttribute="centerX" type="default" id="kGL-Bi-rYU"/>
                             <constraint firstItem="ADd-dz-QCK" firstAttribute="leading" secondItem="RXW-7E-Mgv" secondAttribute="leading" type="default" id="rUV-Xf-w0D"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="statusLabel" destination="jdS-wy-BoI" id="kmF-iM-DSL"/>
-                    </connections>
                 </viewController>
                 <tapGestureRecognizer id="rdx-KO-YsM">
                     <connections>
@@ -93,24 +51,6 @@
     <resources>
         <image name="Plus_sign.jpg" width="368" height="304"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TimeLineView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeLineView.h"/>
-        </class>
-        <class className="TimeLineViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeLineViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addPageImage:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="addPageImage::" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="click:" candidateClass="UIButton"/>
-                <relationship kind="action" name="controlPan:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
