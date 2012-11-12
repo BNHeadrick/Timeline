@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		148B154A164E9CC300755717 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B1549164E9CC300755717 /* UIKit.framework */; };
+		148B154C164E9CC300755717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B154B164E9CC300755717 /* Foundation.framework */; };
+		148B154E164E9CC300755717 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B154D164E9CC300755717 /* CoreGraphics.framework */; };
+		148B1554164E9CC300755717 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 148B1552164E9CC300755717 /* InfoPlist.strings */; };
+		148B1556164E9CC300755717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B1555164E9CC300755717 /* main.m */; };
+		148B155A164E9CC300755717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B1559164E9CC300755717 /* AppDelegate.m */; };
+		148B155C164E9CC300755717 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 148B155B164E9CC300755717 /* Default.png */; };
+		148B155E164E9CC300755717 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 148B155D164E9CC300755717 /* Default@2x.png */; };
+		148B1560164E9CC300755717 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 148B155F164E9CC300755717 /* Default-568h@2x.png */; };
+		148B1563164E9CC300755717 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148B1561164E9CC300755717 /* MainStoryboard.storyboard */; };
+		148B1566164E9CC300755717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B1565164E9CC300755717 /* ViewController.m */; };
+		148B1572164EA61E00755717 /* Timeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B1571164EA61E00755717 /* Timeline.m */; };
+		148B157A164ED49800755717 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B1579164ED49800755717 /* Page.m */; };
+		148B157D164ED5FD00755717 /* TimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B157C164ED5FC00755717 /* TimeLineView.m */; };
+		148B1654164F4ADF00755717 /* TimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B1653164F4ADF00755717 /* TimeLineViewController.m */; };
+		148B16D61650919700755717 /* AddPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148B16D51650919700755717 /* AddPageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		148B1545164E9CC300755717 /* T-Line.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "T-Line.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		148B1549164E9CC300755717 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		148B154B164E9CC300755717 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		148B154D164E9CC300755717 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		148B1551164E9CC300755717 /* T-Line-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "T-Line-Info.plist"; sourceTree = "<group>"; };
+		148B1553164E9CC300755717 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		148B1555164E9CC300755717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		148B1557164E9CC300755717 /* T-Line-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "T-Line-Prefix.pch"; sourceTree = "<group>"; };
+		148B1558164E9CC300755717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		148B1559164E9CC300755717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		148B155B164E9CC300755717 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		148B155D164E9CC300755717 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		148B155F164E9CC300755717 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		148B1562164E9CC300755717 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		148B1564164E9CC300755717 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		148B1565164E9CC300755717 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		148B1570164EA61E00755717 /* Timeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeline.h; sourceTree = "<group>"; };
+		148B1571164EA61E00755717 /* Timeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timeline.m; sourceTree = "<group>"; };
+		148B1578164ED49800755717 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		148B1579164ED49800755717 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		148B157B164ED5FC00755717 /* TimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineView.h; sourceTree = "<group>"; };
+		148B157C164ED5FC00755717 /* TimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineView.m; sourceTree = "<group>"; };
+		148B1652164F4ADF00755717 /* TimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeLineViewController.h; path = ../TimeLineViewController.h; sourceTree = "<group>"; };
+		148B1653164F4ADF00755717 /* TimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeLineViewController.m; path = ../TimeLineViewController.m; sourceTree = "<group>"; };
+		148B16D41650919700755717 /* AddPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPageView.h; sourceTree = "<group>"; };
+		148B16D51650919700755717 /* AddPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPageView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		148B1542164E9CC300755717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148B154A164E9CC300755717 /* UIKit.framework in Frameworks */,
+				148B154C164E9CC300755717 /* Foundation.framework in Frameworks */,
+				148B154E164E9CC300755717 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		148B153A164E9CC300755717 = {
+			isa = PBXGroup;
+			children = (
+				148B154F164E9CC300755717 /* T-Line */,
+				148B1548164E9CC300755717 /* Frameworks */,
+				148B1546164E9CC300755717 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		148B1546164E9CC300755717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				148B1545164E9CC300755717 /* T-Line.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		148B1548164E9CC300755717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				148B1549164E9CC300755717 /* UIKit.framework */,
+				148B154B164E9CC300755717 /* Foundation.framework */,
+				148B154D164E9CC300755717 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		148B154F164E9CC300755717 /* T-Line */ = {
+			isa = PBXGroup;
+			children = (
+				148B1558164E9CC300755717 /* AppDelegate.h */,
+				148B1559164E9CC300755717 /* AppDelegate.m */,
+				148B1561164E9CC300755717 /* MainStoryboard.storyboard */,
+				148B1564164E9CC300755717 /* ViewController.h */,
+				148B1565164E9CC300755717 /* ViewController.m */,
+				148B1550164E9CC300755717 /* Supporting Files */,
+				148B1570164EA61E00755717 /* Timeline.h */,
+				148B1571164EA61E00755717 /* Timeline.m */,
+				148B1652164F4ADF00755717 /* TimeLineViewController.h */,
+				148B1653164F4ADF00755717 /* TimeLineViewController.m */,
+				148B157B164ED5FC00755717 /* TimeLineView.h */,
+				148B157C164ED5FC00755717 /* TimeLineView.m */,
+				148B16D41650919700755717 /* AddPageView.h */,
+				148B16D51650919700755717 /* AddPageView.m */,
+				148B1578164ED49800755717 /* Page.h */,
+				148B1579164ED49800755717 /* Page.m */,
+			);
+			path = "T-Line";
+			sourceTree = "<group>";
+		};
+		148B1550164E9CC300755717 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				148B1551164E9CC300755717 /* T-Line-Info.plist */,
+				148B1552164E9CC300755717 /* InfoPlist.strings */,
+				148B1555164E9CC300755717 /* main.m */,
+				148B1557164E9CC300755717 /* T-Line-Prefix.pch */,
+				148B155B164E9CC300755717 /* Default.png */,
+				148B155D164E9CC300755717 /* Default@2x.png */,
+				148B155F164E9CC300755717 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		148B1544164E9CC300755717 /* T-Line */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148B1569164E9CC300755717 /* Build configuration list for PBXNativeTarget "T-Line" */;
+			buildPhases = (
+				148B1541164E9CC300755717 /* Sources */,
+				148B1542164E9CC300755717 /* Frameworks */,
+				148B1543164E9CC300755717 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "T-Line";
+			productName = "T-Line";
+			productReference = 148B1545164E9CC300755717 /* T-Line.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		148B153C164E9CC300755717 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Brandon Headrick";
+			};
+			buildConfigurationList = 148B153F164E9CC300755717 /* Build configuration list for PBXProject "T-Line" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 148B153A164E9CC300755717;
+			productRefGroup = 148B1546164E9CC300755717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				148B1544164E9CC300755717 /* T-Line */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		148B1543164E9CC300755717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148B1554164E9CC300755717 /* InfoPlist.strings in Resources */,
+				148B155C164E9CC300755717 /* Default.png in Resources */,
+				148B155E164E9CC300755717 /* Default@2x.png in Resources */,
+				148B1560164E9CC300755717 /* Default-568h@2x.png in Resources */,
+				148B1563164E9CC300755717 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148B1541164E9CC300755717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148B1556164E9CC300755717 /* main.m in Sources */,
+				148B155A164E9CC300755717 /* AppDelegate.m in Sources */,
+				148B1566164E9CC300755717 /* ViewController.m in Sources */,
+				148B1572164EA61E00755717 /* Timeline.m in Sources */,
+				148B157A164ED49800755717 /* Page.m in Sources */,
+				148B157D164ED5FD00755717 /* TimeLineView.m in Sources */,
+				148B1654164F4ADF00755717 /* TimeLineViewController.m in Sources */,
+				148B16D61650919700755717 /* AddPageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		148B1552164E9CC300755717 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148B1553164E9CC300755717 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		148B1561164E9CC300755717 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148B1562164E9CC300755717 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		148B1567164E9CC300755717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		148B1568164E9CC300755717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		148B156A164E9CC300755717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "T-Line/T-Line-Prefix.pch";
+				INFOPLIST_FILE = "T-Line/T-Line-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		148B156B164E9CC300755717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "T-Line/T-Line-Prefix.pch";
+				INFOPLIST_FILE = "T-Line/T-Line-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		148B153F164E9CC300755717 /* Build configuration list for PBXProject "T-Line" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B1567164E9CC300755717 /* Debug */,
+				148B1568164E9CC300755717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148B1569164E9CC300755717 /* Build configuration list for PBXNativeTarget "T-Line" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B156A164E9CC300755717 /* Debug */,
+				148B156B164E9CC300755717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 148B153C164E9CC300755717 /* Project object */;
+}
