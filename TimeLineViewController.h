@@ -30,5 +30,7 @@
 
 //-(IBAction)controlPan:(UIPanGestureRecognizer *)recognizer;
 -(IBAction)addPageImage:(UIPanGestureRecognizer *)recognizer;
+-(IBAction)timelinePan:(UIPanGestureRecognizer *)recognizer;
+-(IBAction)timelineTap:(UITapGestureRecognizer *)recognizer;
 
 @end

@@ -45,7 +45,7 @@
   //CGFloat screenHeight = screenRect.size.height;
   CGContextRef context    = UIGraphicsGetCurrentContext();
 
-  CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+  CGContextSetStrokeColorWithColor(context, [UIColor grayColor].CGColor);
 
   // Draw them with a 2.0 stroke width so they are a bit more visible.
   CGContextSetLineWidth(context, 2.0);

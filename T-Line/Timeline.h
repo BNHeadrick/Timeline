@@ -17,6 +17,7 @@
 //TODO; ACTUALLY MAKE THIS AN ARRAY OF TYPE SHAPE NOT A GENERIC ARRAY OF WHATEVER
 @property (strong, nonatomic, retain) NSMutableArray* shapes;
 @property (strong, nonatomic, retain) NSMutableArray* pages;
+@property (strong, nonatomic, retain) Page *activePage;
 
 - (id)init;
 - (void)addPage;

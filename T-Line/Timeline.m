@@ -19,6 +19,7 @@
 @implementation Timeline
 
 @synthesize pages;
+@synthesize activePage;
 
 -(id) init {
   self = [super init];
@@ -34,6 +35,8 @@
 
 -(void) addPage{
   [pages addObject:[[Page alloc] init]];
+  activePage = [pages lastObject];
+  //activePage = [pages
   //[pages addObject:[[NSString alloc]init]];
   //view.frame = CGMakeRect(10,10,20,20);
 }
