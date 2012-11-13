@@ -49,7 +49,9 @@
   //NSLog(@"TouchedTimeline");
   
   //TODO; make this get the size of the view object, not hardcoded width based on the storyboard attribute.
-  CGFloat screenWidth = 660;
+  CGRect screenRect = [[UIScreen mainScreen] bounds];
+//  CGFloat screenWidth = screenRect.size.width-108;
+  CGFloat screenWidth = screenRect.size.height-108;
   
   //the below code is gross...I will get to making it cleaner later.  For now, I'm moving on.
   //nieve way to get the subdivision of the UIView area; draws right to left

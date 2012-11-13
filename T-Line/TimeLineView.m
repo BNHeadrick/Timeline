@@ -39,8 +39,10 @@
 
 - (void)drawRect:(CGRect)rect{
   
-  //TODO; make this get the size of the view object, not hardcoded width based on the storyboard attribute.
-  CGFloat screenWidth = 660;
+  //TODO; make this get the size of the view object, not hardcoded width based on the storyboard attribute. (get reference to the UIImageView object.  Also needs to be dynamic in case the user flips the application.
+  CGRect screenRect = [[UIScreen mainScreen] bounds];
+//  CGFloat screenWidth = screenRect.size.width-108;
+  CGFloat screenWidth = screenRect.size.height-108;
   //CGFloat screenHeight = screenRect.size.height;
   CGContextRef context    = UIGraphicsGetCurrentContext();
 

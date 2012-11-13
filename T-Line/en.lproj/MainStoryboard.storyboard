@@ -65,24 +65,6 @@
     <resources>
         <image name="Plus_sign.jpg" width="368" height="304"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TimeLineView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeLineView.h"/>
-        </class>
-        <class className="TimeLineViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeLineViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addPageImage:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="addPageImage::" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="timelinePan:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="timelineTap:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
