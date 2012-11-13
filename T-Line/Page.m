@@ -16,8 +16,8 @@
 @implementation Page
 @synthesize pageNum;
 
--(int) init:(int) pNum{
-  self.pageNum = pNum;
+-(id) initWithPageNum:(int) pageNum{
+  self.pageNum = pageNum;
   return 0;
 }
 

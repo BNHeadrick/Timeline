@@ -39,7 +39,6 @@
 
 - (void)drawRect:(CGRect)rect{
   
-  //CGRect screenRect = [[UIScreen mainScreen] bounds];
   //TODO; make this get the size of the view object, not hardcoded width based on the storyboard attribute.
   CGFloat screenWidth = 660;
   //CGFloat screenHeight = screenRect.size.height;
@@ -53,17 +52,15 @@
   //NSLog(@"testnum is %@",testNum);
   //int lines=testNum;
   
-  NSLog(@"numLines is %d",numLines);
-  int lines = numLines+1;
-  int displacement = screenWidth/lines;
+  //NSLog(@"numLines is %d",numLines);
+  int displacement = screenWidth/numLines;
   int absLoc = screenWidth;
-  if(lines>0){
-    for(int i = 0; i<lines-1; i++){
+  if(numLines>0){
+    for(int i = 0; i<numLines-1; i++){
       absLoc = absLoc - displacement;
       CGContextMoveToPoint(context, (absLoc),0); //start at this point
       
       CGContextAddLineToPoint(context, (absLoc), 100); //draw to this point
-      
     }
   }
   

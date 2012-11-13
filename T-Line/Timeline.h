@@ -21,5 +21,6 @@
 
 - (id)init;
 - (void)addPage;
+- (void) setActivePageWithIndex:(int)pageIndex;
 
 @end

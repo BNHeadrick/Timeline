@@ -24,21 +24,34 @@
 -(id) init {
   self = [super init];
   pages = [[NSMutableArray alloc] init];
+  
+  //code below fails for some reason...just gonna set the page number manually for now.
+//  [pages addObject:[[Page alloc] initWithPageNum:0]];
+  [pages addObject:[[Page alloc] init]];
+  
+  activePage = [pages lastObject];
+  activePage.pageNum = self.pages.count-1;
+  
+  //NSLog(@"this page info is %d", activePage.pageNum);
+  
   return self;
   
 }
 
-//-(void) draw:(CGContextRef) context {
-//  
-//}
-
 
 -(void) addPage{
+  
   [pages addObject:[[Page alloc] init]];
   activePage = [pages lastObject];
-  //activePage = [pages
-  //[pages addObject:[[NSString alloc]init]];
-  //view.frame = CGMakeRect(10,10,20,20);
+  
+  activePage.pageNum = self.pages.count-1;
+  
+  //NSLog(@"this page info is %d", activePage.pageNum);
+
+}
+
+-(void) setActivePageWithIndex:(int)pageIndex{
+  activePage = [pages objectAtIndex:pageIndex];
 }
 
 @end

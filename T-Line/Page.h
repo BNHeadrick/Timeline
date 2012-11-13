@@ -12,7 +12,7 @@
 
 @property int pageNum;
 
--(int) init:(int) pNum;
+-(id) initWithPageNum:(int) pageNum;
 
 
 @end
