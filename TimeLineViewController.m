@@ -40,13 +40,10 @@
 //scroll the timelineArea to specify a page to make active.
 -(IBAction)timelinePan:(UIPanGestureRecognizer *)recognizer{
   
-  NSLog(@"PannedTime");
-  
   int theActivePage = [self calcActivePage:recognizer];
   
   [timeline setActivePageWithIndex:theActivePage];
-  [_tlView setActivePage: theActivePage];
-  //NSLog(@"activeIs %d",theActivePage);
+  [(TimeLineView *)_tlView setActivePage: theActivePage];
   
   [_tlView setNeedsDisplay];
   
@@ -58,11 +55,10 @@
   
   //int theActivePage = 0;
   
-  int theActivePage = [self calcActivePage:recognizer];
+  int theActivePage = [self calcActivePage:(UIPanGestureRecognizer *)recognizer];
   
   [timeline setActivePageWithIndex:theActivePage];
-  [_tlView setActivePage: theActivePage];
-  //NSLog(@"activeIs %d",theActivePage);
+  [(TimeLineView *)_tlView setActivePage: theActivePage];
   
   [_tlView setNeedsDisplay];
   
@@ -82,7 +78,7 @@
   int tempActive = -1;
   if(numLines>0){
     for(int i = 0; i<numLines-1; i++){
-      tempActive = [(TimeLineView *)_tlView numLines]-2;
+      tempActive = numLines-2;
       absLoc = absLoc - displacement;
       
       CGPoint location = [recognizer locationInView:self.view];

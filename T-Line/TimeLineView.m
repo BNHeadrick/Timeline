@@ -76,50 +76,14 @@
   // and now draw the Path!
   CGContextStrokePath(context);
   
-  NSLog(@"activeLoc is %d", activeLoc);
-  
+  //NSLog(@"activeLoc is %d", activeLoc);
   
   // First, create a new rect with the upper half of the view
 	CGRect upperRect = CGRectMake(activeLoc, rect.origin.y, displacement, rect.size.height);
-	// Very similar to creating the upperRect, however for the lower portion of the view
-	//CGRect lowerRect = CGRectMake(rect.origin.x, rect.origin.y + (rect.size.width / 2), rect.size.width, rect.size.height / 2);
 	
 	[[UIColor redColor] set]; // red team color
 	UIRectFill(upperRect); // this will fill the upper rect all red,
-  // if you'd like, try these lines to get a nice effect
-  // [[UIColor whiteColor] set];
-  // UIRectFrame(upperRect); // This will frame the rect with a one point line I believe
-	//[[UIColor blueColor] set]; // blue team color
-	//UIRectFill(lowerRect); // and of course, fill our lower rect with blue
-  
-  
-  /**below is just a drawn rect on the top of the view**/
-  
-  /*
-  // First, create a new rect with the upper half of the view
-	CGRect upperRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height / 2);
-	// Very similar to creating the upperRect, however for the lower portion of the view
-	CGRect lowerRect = CGRectMake(rect.origin.x, rect.origin.y + (rect.size.width / 2), rect.size.width, rect.size.height / 2);
-	
-	[[UIColor redColor] set]; // red team color
-	UIRectFill(upperRect); // this will fill the upper rect all red,
-  // if you'd like, try these lines to get a nice effect
-  // [[UIColor whiteColor] set];
-  // UIRectFrame(upperRect); // This will frame the rect with a one point line I believe
-	[[UIColor blueColor] set]; // blue team color
-	UIRectFill(lowerRect); // and of course, fill our lower rect with blue
-  */
   
 }
-/*
--(void)setActivePage:(int)acPage{
-  NSLog(@"setActive is %d", acPage);
-  
-  self.activePage = acPage;
-  
-  
-  NSLog(@"setActive is %d", self.activePage);
-}
-*/
 
 @end
