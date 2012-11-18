@@ -17,6 +17,7 @@
 
 @implementation TimeLineView
 @synthesize numLines;
+@synthesize activePage;
 
 
 -(id)init{
@@ -39,6 +40,8 @@
 
 - (void)drawRect:(CGRect)rect{
   
+  
+  NSLog(@"activePage is %d",activePage);
   //TODO; make this get the size of the view object, not hardcoded width based on the storyboard attribute. (get reference to the UIImageView object.  Also needs to be dynamic in case the user flips the application.
   CGRect screenRect = [[UIScreen mainScreen] bounds];
 //  CGFloat screenWidth = screenRect.size.width-108;
@@ -57,17 +60,39 @@
   //NSLog(@"numLines is %d",numLines);
   int displacement = screenWidth/numLines;
   int absLoc = screenWidth;
+  int activeLoc = 0;
   if(numLines>0){
     for(int i = 0; i<numLines-1; i++){
       absLoc = absLoc - displacement;
       CGContextMoveToPoint(context, (absLoc),0); //start at this point
-      
       CGContextAddLineToPoint(context, (absLoc), 100); //draw to this point
+      
+      if (activePage == i) {
+        activeLoc = absLoc;
+      }
     }
   }
   
   // and now draw the Path!
   CGContextStrokePath(context);
+  
+  NSLog(@"activeLoc is %d", activeLoc);
+  
+  
+  // First, create a new rect with the upper half of the view
+	CGRect upperRect = CGRectMake(activeLoc, rect.origin.y, displacement, rect.size.height);
+	// Very similar to creating the upperRect, however for the lower portion of the view
+	//CGRect lowerRect = CGRectMake(rect.origin.x, rect.origin.y + (rect.size.width / 2), rect.size.width, rect.size.height / 2);
+	
+	[[UIColor redColor] set]; // red team color
+	UIRectFill(upperRect); // this will fill the upper rect all red,
+  // if you'd like, try these lines to get a nice effect
+  // [[UIColor whiteColor] set];
+  // UIRectFrame(upperRect); // This will frame the rect with a one point line I believe
+	//[[UIColor blueColor] set]; // blue team color
+	//UIRectFill(lowerRect); // and of course, fill our lower rect with blue
+  
+  
   /**below is just a drawn rect on the top of the view**/
   
   /*
@@ -86,5 +111,15 @@
   */
   
 }
+/*
+-(void)setActivePage:(int)acPage{
+  NSLog(@"setActive is %d", acPage);
+  
+  self.activePage = acPage;
+  
+  
+  NSLog(@"setActive is %d", self.activePage);
+}
+*/
 
 @end

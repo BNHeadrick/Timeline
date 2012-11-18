@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TimeLineView.h"
+
 
 @interface TimeLineView : UIView
 @property int numLines;
+@property (nonatomic) int activePage;
+
 
 //- (void)drawRectWithNumLines:(int)lines;
 

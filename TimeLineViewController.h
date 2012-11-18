@@ -32,5 +32,6 @@
 -(IBAction)addPageImage:(UIPanGestureRecognizer *)recognizer;
 -(IBAction)timelinePan:(UIPanGestureRecognizer *)recognizer;
 -(IBAction)timelineTap:(UITapGestureRecognizer *)recognizer;
+-(int) calcActivePage:(UIPanGestureRecognizer *)recognizer;
 
 @end
